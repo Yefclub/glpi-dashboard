@@ -7,14 +7,14 @@ global $DB;
 Session::checkLoginUser();
 
 if(!isset($_POST['query'])) {
-    die(json_encode(['error' => 'Query não fornecida']));
+    die(json_encode(['error' => __('Query não fornecida', 'dashboard')]));
 }
 
 $query = $_POST['query'];
 
 // Executar query e retornar resultados
 $result = $DB->query($query);
-$data = array();
+$data = [];
 
 while($row = $DB->fetchAssoc($result)) {
     $data[] = $row;
