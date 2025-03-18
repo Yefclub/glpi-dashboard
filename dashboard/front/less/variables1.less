@@ -1,0 +1,86 @@
+/******************* Color variables *********************/
+
+/*	 Global Color variables @requested not to change these values if you are not sure of what you are doing
+----------------------------------------------------------------------------------------------------------- */
+
+@boxedBackgroundImage: 'http://newevolutiondesigns.com/images/freebies/abstract-background-19.jpg';
+
+@bodyBackground 	: 	#f8f9fa;
+
+@primary 	: 	#2c3e50;  // Azul escuro moderno
+@secondary 	: 	#34495e;  // Cinza azulado escuro
+
+@success 	: 	#27ae60;  // Verde mais suave
+@info 		: 	#3498db;  // Azul mais vibrante
+@warning 	: 	#f1c40f;  // Amarelo mais suave
+@danger 	: 	#e74c3c;  // Vermelho mais suave
+
+@inverse : #2c3e50;
+
+@options-background 	: 	#ffffff;
+
+@primaryBorder 	: 	darken(@primary,10%);
+@successBorder 	: 	darken(@success,10%);
+@infoBorder 		: 	darken(@info,10%);
+@warningBorder 	: 	darken(@warning,10%);
+@dangerBorder 	: 	darken(@danger,10%);
+
+/*	 Fonts
+-------------------------------------------------------------------------------------------------- */
+
+@first-font:'Inter', sans-serif;  // Fonte moderna e legível
+@second-font:'Roboto', sans-serif;
+@third-font:'Open Sans', sans-serif;
+
+/*	 Navbar variables
+-------------------------------------------------------------------------------------------------- */
+
+@navBackground 	: 	@primary;
+@navBarHeight 	: 	70px;  // Altura aumentada para melhor usabilidade
+@navTextColor 	: 	#FFFFFF;
+
+/*	 LeftSidebar variables
+-------------------------------------------------------------------------------------------------- */
+
+@leftSidebarBackground 				: 	@secondary;
+@leftSidebarWidth 					: 	250px;  // Largura aumentada
+@leftSidebarMiniWidth 	 			: 	80px;
+@leftSidebarMinHeight 				: 	1200px;
+@leftSidebarLinkColor  				: 	lighten(@leftSidebarBackground,60%);
+@leftSidebarLinkLeftBorder  				: 	@info;
+
+/*	 RightSidebar variables
+-------------------------------------------------------------------------------------------------- */
+
+@rightSidebarBackground 		            	: 	#ffffff;
+@rightSidebarWidth 					: 	300px;
+
+/*	 Panels variables
+-------------------------------------------------------------------------------------------------- */
+
+@panelInfoBg 					 				: 	#FFFFFF;
+@panelInfoHeadingBg 	 				: 	@info;
+@panelInfoHeadingColor				: 	#FFFFFF;
+@panelInfoHeadingBorder       : 	lighten(@panelInfoHeadingBg,10%);
+
+@panelSuccessBg 					 		: 	#FFFFFF;
+@panelSuccessHeadingBg 	 			: 	@success;
+@panelSuccessHeadingColor			: 	#FFFFFF;
+@panelSuccessHeadingBorder    : 	lighten(@panelSuccessHeadingBg,10%);
+
+@panelWarningBg 					 		: 	#FFFFFF;
+@panelWarningHeadingBg 	 			: 	@warning;
+@panelWarningHeadingColor			: 	#FFFFFF;
+@panelWarningHeadingBorder    : 	lighten(@panelWarningHeadingBg,10%);
+
+@panelDangerBg 					 			: 	#FFFFFF;
+@panelDangerHeadingBg 	 			: 	@danger;
+@panelDangerHeadingColor			: 	#FFFFFF;
+@panelDangerHeadingBorder     : 	lighten(@panelDangerHeadingBg,10%);
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}

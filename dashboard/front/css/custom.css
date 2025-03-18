@@ -1,0 +1,264 @@
+/* Custom Styles for Modern Dashboard */
+
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset e estilos base */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Sidebar */
+.left-sidebar {
+    background: #34495e;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.left-sidebar .nav > li > a {
+    color: #ecf0f1;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.left-sidebar .nav > li > a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #3498db;
+}
+
+/* Cards e Painéis */
+.panel {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.panel-heading {
+    border-radius: 8px 8px 0 0;
+    padding: 15px 20px;
+}
+
+.panel-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Botões */
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+/* Tabelas */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Formulários */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52,152,219,0.25);
+}
+
+/* Gráficos e Widgets */
+.widget {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .left-sidebar {
+        width: 100%;
+        position: relative;
+    }
+    
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .panel {
+        margin-bottom: 15px;
+    }
+}
+
+/* Utilitários */
+.text-primary { color: #3498db !important; }
+.text-success { color: #27ae60 !important; }
+.text-warning { color: #f1c40f !important; }
+.text-danger { color: #e74c3c !important; }
+
+.bg-primary { background-color: #3498db !important; }
+.bg-success { background-color: #27ae60 !important; }
+.bg-warning { background-color: #f1c40f !important; }
+.bg-danger { background-color: #e74c3c !important; }
+
+/* Estilos para Dashboard Personalizado */
+
+/* Grid Stack */
+.grid-stack {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 500px;
+}
+
+.grid-stack-item {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.grid-stack-item-content {
+    overflow: hidden;
+}
+
+/* Painel de Widgets */
+.widget-panel {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.widget-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.widget-item {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: move;
+    transition: all 0.3s ease;
+}
+
+.widget-item:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+}
+
+/* Containers de Widgets */
+.chart-container,
+.table-container,
+.card-container {
+    height: 100%;
+    width: 100%;
+}
+
+/* Tabelas */
+.table-container table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.table-container th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Barra de Ferramentas */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toolbar select {
+    width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-stack {
+        padding: 10px;
+    }
+    
+    .widget-panel {
+        margin-top: 15px;
+    }
+    
+    .toolbar {
+        flex-direction: column;
+    }
+    
+    .toolbar select {
+        width: 100%;
+    }
+}
