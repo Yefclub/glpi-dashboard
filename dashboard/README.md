@@ -1,24 +1,44 @@
+# Dashboard para GLPI
 
-# Dashboard
+Plugin de dashboard personalizável para GLPI 10.x
 
+## Requisitos
 
-1 - Proceder a instalação como a de um plugin qualquer, descompactando o arquivo e copiando a pasta para a pasta plugins no servidor de GLPI.
+- GLPI 10.0 ou superior
+- PHP 7.4 ou superior
+- MySQL 5.7 ou superior
 
-2 - Na interface do GLPI acessar Configurar -> Plugins e efetuar a instalação.
+## Instalação
 
-3 - Acessar no menu do GLPI: Plugins -> Dashboard
+1. Descompacte o arquivo e copie a pasta `dashboard` para a pasta `plugins` do seu servidor GLPI
+2. Na interface do GLPI, acesse Configurar -> Plugins e efetue a instalação
+3. Acesse no menu do GLPI: Plugins -> Dashboard
 
+## Funcionalidades
 
-#############################################################
+- Dashboards personalizáveis com widgets arrastáveis
+- Gráficos e tabelas interativas
+- Suporte a múltiplos layouts por usuário
+- Integração com tickets, mudanças e problemas
+- Interface responsiva
+- Suporte a internacionalização
 
+## Configuração
 
-1 - Perform the installation as any plugin, unzipping the file and copying the folder to the plugins folder in GLPI server.
+1. Acesse o dashboard através do menu Plugins -> Dashboard
+2. Use o painel de widgets para adicionar novos elementos
+3. Arraste e redimensione os widgets conforme necessário
+4. Salve seu layout personalizado
 
-2 - In the GLPI interface to access Setup -> Plugins for installation.
+## Suporte
 
-3 - Get in GLPI Menu: Plugins -> Dashboard
+Para suporte, reporte bugs ou sugestões, visite:
+https://forge.glpi-project.org/projects/dashboard
 
+## Licença
 
-##############################################################
+Este plugin é licenciado sob GPLv2+
+
+## Screenshots
 
 ![](https://sourceforge.net/p/glpidashboard/screenshot/GLPI_-_Dashboard_-_Home.png)

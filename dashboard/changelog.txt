@@ -1,3 +1,14 @@
+Versão 2.0.0:
+
+- Compatibilidade com GLPI 10.x
+- Adicionado suporte a dashboards personalizáveis
+- Melhorada a estrutura do código
+- Adicionado suporte a internacionalização
+- Implementada nova API de migração
+- Adicionado suporte a permissões
+- Melhorada a segurança
+- Otimizado o desempenho
+
 Versão 0.9.9:
 
 - GLPI 9.4.x
@@ -5,12 +16,9 @@ Versão 0.9.9:
 - tempo de solução > 7 dias em métricas
 - Correção de bugs diversos;
 
-
-
 Version 0.9.9:
 
 - GLPI 9.4.x
-
 
 - Fix minor bugs;
 
