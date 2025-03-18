@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 if(!empty($_POST['submit']))
 {	
 	$data_ini =  $_POST['date1'];	

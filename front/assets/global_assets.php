@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $arr_assets =  array('Computer', 'Monitor', 'Printer', 'Networkequipment', 'Phone', 'Peripheral');
 $global = 0;
 

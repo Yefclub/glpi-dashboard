@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query_os = "
 SELECT CONCAT(glpi_operatingsystems.name,' ',glpi_operatingsystemversions.name) AS so, count( glpi_computers.id ) AS conta
 FROM glpi_operatingsystems, glpi_computers, glpi_items_operatingsystems, glpi_operatingsystemversions

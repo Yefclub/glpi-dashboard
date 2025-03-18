@@ -1,10 +1,27 @@
-
 @import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
 
+/* Modernização de Design - Tema Corporativo */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --tertiary-color: #1abc9c;
+  --accent-color: #f39c12;
+  --background-color: #ecf0f1;
+  --card-background: #ffffff;
+  --text-color: #2c3e50;
+  --text-light: #7f8c8d;
+  --border-color: #d5d8dc;
+  --success-color: #2ecc71;
+  --warning-color: #f1c40f;
+  --danger-color: #e74c3c;
+  --info-color: #3498db;
+}
+
 body {
-  font-family: 'RobotoDraft','Helvetica',sans-serif !important;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
   min-height: 100%;
-  background-color: #e5e5e5;
 }
 
 .iframe-side {
@@ -15,7 +32,9 @@ body {
 
 #head {
 	width: 115%;
-	background-color: #606CC4;
+	background-color: var(--primary-color);
+	border-bottom: 3px solid var(--secondary-color);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	color: #fff;
 	padding-top: 15px;
 	padding-bottom: 20px;
@@ -49,7 +68,9 @@ body {
 
 #head-lg {
 	width: 115%;
-	background-color: #009688;
+	background-color: var(--primary-color);
+	border-bottom: 3px solid var(--secondary-color);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	color: #fff;
 	padding-top: 15px;
 	padding-bottom: 20px;
@@ -67,8 +88,8 @@ body {
 
 #head-rel .btn-primary, #head-lg .btn-primary {
   color: #ffffff; 
-  background-color: #3E4EB8;
-  border-color: #3E4EB8; 
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color); 
   border-radius: 2px;	
 }	
 
@@ -84,7 +105,9 @@ body {
 
 #head-tic {
 	width: 120%;
-	background-color: #606CC4;
+	background-color: var(--primary-color);
+	border-bottom: 3px solid var(--secondary-color);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	color: #fff;
 	padding-top: 15px;
 	padding-bottom: 20px;
@@ -1712,8 +1735,8 @@ table.sortable thead {
 
 .btn-primary { 
   color: #ffffff; 
-  background-color: #4184f3; 
-  border-color: #4184f3; 
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color); 
   border-radius: 2px;
 } 
  
@@ -1723,8 +1746,8 @@ table.sortable thead {
 .btn-primary.active, 
 .open .dropdown-toggle.btn-primary { 
   color: #ffffff; 
-  background-color: #3E4EB8; 
-  border-color: #3E4EB8; 
+  background-color: #2980b9; 
+  border-color: #2980b9; 
   box-shadow: 3px 3px 2px 0px rgba(51,51,51,1);
   -moz-box-shadow: 3px 3px 2px 0px rgba(51,51,51,1);
   box-shadow: 3px 3px 2px 0px rgba(51,51,51,1);
@@ -1751,12 +1774,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active, 
 .btn-primary[disabled].active, 
 fieldset[disabled] .btn-primary.active { 
-  background-color: #4184f3; 
-  border-color: #4184f3; 
+  background-color: var(--secondary-color); 
+  border-color: var(--secondary-color); 
 } 
  
 .btn-primary .badge { 
-  color: #4184f3; 
+  color: var(--secondary-color); 
   background-color: #ffffff; 
 }
 
@@ -2060,7 +2083,10 @@ td > a:hover {
 	position: relative;	
 	height: 40px;
 	line-height: 40px;	
-	background: #fff;
+	background: var(--primary-color);
+	border-radius: 8px 8px 0 0;
+	padding: 15px;
+	border-bottom: 2px solid var(--secondary-color);
 
 	/*border: 1px solid #d6d6d6;
 	border-top-color: #00A65A; */		
@@ -2111,11 +2137,9 @@ td > a:hover {
 }
 
 .widget-content {
-	padding: 20px 15px 15px;	
-	background: #FFF;		
-	border: 1px solid #D5D5D5;	
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	padding: 20px;
+	background: var(--card-background);
+	border: 1px solid #D5D5D5;
 	border-radius: 5px;
 }
 
@@ -2144,7 +2168,10 @@ td > a:hover {
 	position: relative;	
 	height: 40px;
 	line-height: 40px;	
-	background: #fff;
+	background: var(--primary-color);
+	border-radius: 8px 8px 0 0;
+	padding: 15px;
+	border-bottom: 2px solid var(--secondary-color);
 
 	/*border: 1px solid #d6d6d6;*/		
 	background-clip: padding-box;
@@ -2222,8 +2249,17 @@ td > a:hover {
 .card {
 /*  position: relative; 
 margin-bottom: 30px;*/
-  background: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);  
+  background: var(--card-background);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
 }
 
 .card1 { 
@@ -2367,5 +2403,38 @@ margin-bottom: 30px;*/
 	padding-left: 15px; 
 	text-align: left;
 	color: #fff;
+}
+
+/* Estilos adicionais para modernização */
+.widget {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.widget:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+
+/* Estilo para tabelas */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: rgba(236, 240, 241, 0.5);
+}
+
+.table thead th {
+  background-color: var(--primary-color);
+  color: white;
+  border-bottom: 2px solid var(--secondary-color);
 }
 

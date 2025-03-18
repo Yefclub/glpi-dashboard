@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query2 = "
 SELECT glpi_requesttypes.name AS request, count( glpi_tickets.id ) AS total
 FROM `glpi_tickets` , glpi_requesttypes

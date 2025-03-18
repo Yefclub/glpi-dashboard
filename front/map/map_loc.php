@@ -6,6 +6,8 @@ include (GLPI_ROOT . "/inc/config.php");
 
 global $DB;  
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 Session::checkRight("profile", READ);
 

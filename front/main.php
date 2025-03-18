@@ -5,6 +5,8 @@ include ("../../../inc/config.php");
 
 global $DB;
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 
 $userID = $_SESSION['glpiID'];

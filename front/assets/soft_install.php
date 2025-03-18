@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query_os = "
 SELECT glpi_softwares.name AS name, COUNT( glpi_computers_softwareversions.computers_id ) AS conta
 FROM glpi_computers_softwareversions, glpi_softwares, glpi_softwareversions

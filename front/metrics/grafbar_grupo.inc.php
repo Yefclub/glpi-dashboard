@@ -2,6 +2,8 @@
 
 global $DB;
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query3 = 
 "SELECT count(glpi_tickets.id) AS conta, glpi_users.firstname AS name, glpi_users.realname AS sname
 FROM `glpi_tickets_users`, glpi_tickets, glpi_users

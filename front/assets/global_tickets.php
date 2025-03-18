@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query_os = "
 SELECT glpi_items_tickets.itemtype AS tipo, glpi_items_tickets.`items_id` AS id , COUNT(*) AS conta
 FROM glpi_items_tickets, glpi_tickets

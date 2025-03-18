@@ -3,6 +3,8 @@
 include ("../../../../inc/includes.php");
 include ("../../../../inc/config.php");
 
+error_reporting(E_ERROR | E_PARSE);
+
 if(isset($_REQUEST['ent'])) {
 
    $entities = Profile_User::getUserEntitiesForRight($_SESSION['glpiID'],Ticket::$rightname,Ticket::READALL);	 	

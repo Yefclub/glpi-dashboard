@@ -4,6 +4,8 @@ include ("../../../inc/includes.php");
 include ("../../../inc/config.php");
 global $DB;
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 
 $query_lay = "SELECT value FROM glpi_plugin_dashboard_config WHERE name = 'layout' AND users_id = ".$_SESSION['glpiID']." ";																

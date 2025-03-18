@@ -4,7 +4,9 @@ define('GLPI_ROOT', '../../../..');
 include (GLPI_ROOT . "/inc/includes.php");
 include (GLPI_ROOT . "/inc/config.php");
 
-global $DB;  
+global $DB;
+
+error_reporting(E_ERROR | E_PARSE);
 
 Session::checkLoginUser();
 Session::checkRight("profile", READ);

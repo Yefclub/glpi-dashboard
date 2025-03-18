@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query2 = "
 SELECT COUNT(glpi_tickets.id) as tick, glpi_tickets.status as stat
 FROM glpi_tickets

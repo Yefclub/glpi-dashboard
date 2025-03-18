@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query2 = "
 SELECT id, name, contact, users_id, groups_id, phonetypes_id, phonemodels_id, brand, manufacturers_id, states_id 
 FROM glpi_phones

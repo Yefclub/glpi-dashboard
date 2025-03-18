@@ -9,6 +9,8 @@ $datas = "BETWEEN '".$data_ini." 00:00:00' AND '".$data_fin." 23:59:59'";
 }
 */
 
+error_reporting(E_ERROR | E_PARSE);
+
 $data_ini2 = date("Y-m-d");  //hoje
 
 $data_fin2 = date('Y-m-d', strtotime('-1 week'));

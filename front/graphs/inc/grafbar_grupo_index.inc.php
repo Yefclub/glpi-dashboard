@@ -3,6 +3,7 @@
 
 global $DB;
 
+error_reporting(E_ERROR | E_PARSE);
 
 echo '
 	<div class="row-fluid chart" style="margin-bottom:30px;" >

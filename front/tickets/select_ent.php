@@ -3,6 +3,8 @@
 include ("../../../../inc/includes.php");
 global $DB, $CFG_GLPI;
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 Session::checkRight("profile", READ);
 ?>

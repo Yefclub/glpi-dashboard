@@ -7,6 +7,8 @@ include ("../../../../inc/includes.php");
 include ("../../../../inc/config.php");
 
 global $DB, $sql, $res;
+
+error_reporting(E_ERROR | E_PARSE);
 ?>
 
 <model>

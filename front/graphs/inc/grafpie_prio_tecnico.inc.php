@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 if($data_ini == $data_fin) {
 	$datas = "LIKE '".$data_ini."%'";	
 }	

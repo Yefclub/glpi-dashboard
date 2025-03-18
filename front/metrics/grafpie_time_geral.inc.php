@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 if($id_grp != '') {
 
 	$query2 = "

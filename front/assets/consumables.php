@@ -1,5 +1,8 @@
 
 <?php
+
+error_reporting(E_ERROR | E_PARSE);
+
 $query2 = "
 SELECT * FROM `glpi_consumableitems`
 ".$ent_cons." 

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $querydays = "
 SELECT count( id ) AS chamados , DATEDIFF( solvedate, date ) AS days
 FROM glpi_tickets

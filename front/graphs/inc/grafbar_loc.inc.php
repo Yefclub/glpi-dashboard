@@ -2,6 +2,8 @@
 
 global $DB;
 
+error_reporting(E_ERROR | E_PARSE);
+
 $sql_loc = "SELECT COUNT(id) AS id FROM `glpi_locations` ";
 
 $result_loc = $DB->query($sql_loc) or die('erro');

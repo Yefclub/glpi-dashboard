@@ -3,6 +3,8 @@
 include ("../../../../inc/includes.php");
 include ("../../../../inc/config.php");
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 
 $mydate = isset($_POST["date1"]) ? $_POST["date1"] : "";

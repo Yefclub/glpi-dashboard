@@ -1,5 +1,6 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
 
 echo "
 <script type='text/javascript'>

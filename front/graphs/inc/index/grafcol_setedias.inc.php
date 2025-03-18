@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $data_inis = date("Y-m-d");  //hoje
 $data_fins = date('Y-m-d', strtotime('-6 days'));
 

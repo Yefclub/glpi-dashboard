@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query_os = "
 SELECT glpi_cartridgeitems.id, glpi_cartridgeitems.name AS name, glpi_cartridgeitems.ref, COUNT( glpi_cartridges.cartridgeitems_id ) AS conta
 FROM `glpi_cartridges` , glpi_cartridgeitems

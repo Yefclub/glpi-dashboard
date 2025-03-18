@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query2 = "
 SELECT glpi_computers.name AS name, count( glpi_tickets.id ) AS conta, glpi_computers.id AS cid
 FROM glpi_tickets, glpi_computers, glpi_items_tickets

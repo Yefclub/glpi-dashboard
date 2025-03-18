@@ -3,6 +3,8 @@
 include ("../../../../inc/includes.php");
 include ("../../../../inc/config.php");
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 
 global $DB;

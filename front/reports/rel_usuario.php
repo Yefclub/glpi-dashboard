@@ -6,6 +6,8 @@ include "../inc/functions.php";
 
 global $DB, $style;
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 Session::checkRight("profile", READ);
 

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $status = "(5,6)"	;	
 
 $query2 = "

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 //chamados abertos (opened)
 $querym = "
 SELECT DISTINCT DATE_FORMAT( date, '%b-%y' ) AS month_l, COUNT( id ) AS nb, DATE_FORMAT( date, '%y-%m' ) AS

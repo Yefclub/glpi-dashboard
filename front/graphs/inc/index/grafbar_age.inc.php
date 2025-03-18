@@ -1,5 +1,6 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
 
 $datai_s = date("Y-m-d");  //hoje
 $dataf_s = date('Y-m-d', strtotime('-6 days'));

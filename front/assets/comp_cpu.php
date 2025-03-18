@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query2 = "
 SELECT glpi_deviceprocessors.designation AS name, glpi_items_deviceprocessors.frequency AS freq, count( glpi_items_deviceprocessors.id ) AS conta
 FROM glpi_items_deviceprocessors

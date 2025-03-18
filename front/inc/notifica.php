@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $sql = "
 SELECT COUNT(gt.id) AS total
 FROM glpi_tickets_users gtu, glpi_tickets gt

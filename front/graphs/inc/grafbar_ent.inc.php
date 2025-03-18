@@ -2,6 +2,8 @@
 
 global $DB;
 
+error_reporting(E_ERROR | E_PARSE);
+
 $sql_ent = "SELECT COUNT(id) AS id FROM `glpi_entities` ";
 
 $result_ent = $DB->query($sql_ent) or die('erro');

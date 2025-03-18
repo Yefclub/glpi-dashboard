@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 $query_unk = "SELECT count(*) AS total
 FROM `glpi_networkequipments`
 WHERE `is_deleted` = 0

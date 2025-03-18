@@ -1,6 +1,8 @@
 
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 //echo '<div id="grafcat" class="span12" style="height: 460px; margin-top:40px;">';
 
 $query4 = "

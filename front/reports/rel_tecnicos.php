@@ -5,6 +5,8 @@ include ("../../../../inc/config.php");
 
 global $DB, $con;
 
+error_reporting(E_ERROR | E_PARSE);
+
 Session::checkLoginUser();
 Session::checkRight("profile", READ);
 
